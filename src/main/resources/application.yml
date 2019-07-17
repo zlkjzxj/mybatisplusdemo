@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?allowMultiQueries=true&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+logging:
+  level:
+    root: warn #属于日志
+    com.sunny.mybatisplusdemo.mapper: trace #包下的日志
+  pattern:
+    console: '%d{yyyy-MM-dd-HH:mm:ss} [%thread] %-5level %logger- %msg%n'
+
+#mybatis-plus:
+#  type-aliases-package: com.sunny.mybatisplusdemo.entity
+#  mapper-locations: classpath:/mapper/*/*Mapper.xml
